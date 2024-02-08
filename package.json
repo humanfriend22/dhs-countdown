@@ -1,0 +1,23 @@
+{
+  "name": "school",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:public": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "preview:public": "vite preview --host",
+    "generate-assets": "pwa-assets-generator --preset minimal-2023 public/favicon.png"
+  },
+  "devDependencies": {
+    "@vite-pwa/assets-generator": "^0.2.3",
+    "autoprefixer": "^10.4.17",
+    "daisyui": "^4.6.1",
+    "postcss": "^8.4.34",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.0.8",
+    "vite-plugin-pwa": "^0.17.5"
+  }
+}

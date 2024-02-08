@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DUSD Countdown</title>
+</head>
+
+<body class="bg-base-200 overflow-y-hidden h-screen md:overflow-auto m-0 p-0">
+  <main class="max-w-screen pt-10 px-4 h-full">
+    <section class="my-auto w-full max-w-96 mx-auto h-full relative">
+      <div class="card relative w-full bg-neutral shadow-2xl mr-10 skeleton" id="countdown-1">
+        <div class="card-body opacity-0">
+          <h2 class="card-title">Period</h2>
+          <span class="countdown font-mono text-2xl mt-5">
+            <span style="--value:0;"></span>:
+            <span style="--value:0;"></span>:
+            <span style="--value:0;"></span>
+          </span>
+        </div>
+      </div>
+      <div class="card w-full bg-neutral shadow-2xl mt-5 skeleton" id="countdown-2">
+        <div class="card-body opacity-0">
+          <h2 class="card-title">School</h2>
+          <span class="countdown font-mono text-2xl mt-5">
+            <span style="--value:0;"></span>:
+            <span style="--value:0;"></span>:
+            <span style="--value:0;"></span>
+          </span>
+        </div>
+      </div>
+
+      <a class="btn btn-square btn-ghost animate-pulse absolute bottom-3 left-1"
+        href="https://github.com/humanfriend22/dusd-countdown/README.md" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+        </svg>
+      </a>
+
+      <button class="btn btn-square btn-ghost animate-pulse absolute bottom-3 right-1" id="fullscreen">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+        </svg>
+      </button>
+    </section>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
