@@ -10,9 +10,9 @@ export default defineConfig({
             },
             manifest: {
                 name: 'DHS Countdown',
-                short_name: 'DHSCountdown',
+                short_name: 'Countdown',
                 description: 'A countdown of the bell schedule',
-                theme_color: '#ffffff',
+                theme_color: '#191e24',
                 icons: [
                     {
                         "src": "pwa-64x64.png",
