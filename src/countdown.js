@@ -9,6 +9,9 @@
 */
 
 export function animateCountdown(card, to) {
+    card.classList.remove('skeleton');
+    card.children[0].classList.remove('opacity-0');
+
     const [hours, minutes, seconds] = Array.from(card.querySelectorAll('span:not(.countdown)'));
 
     const updateTime = () => {

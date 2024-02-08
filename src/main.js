@@ -3,22 +3,18 @@ import './style.css';
 import { animateCountdown } from './countdown';
 import { currentScheduleState } from './schedules';
 
+// Cards
 const { inSession, periodEnd, schoolEnd } = currentScheduleState();
-
 const [card1, card2] = document.querySelectorAll('.card');
-
 if (inSession) {
     animateCountdown(card1, periodEnd)
-    card1.classList.remove('skeleton');
-    card1.children[0].classList.remove('opacity-0');
 
-    if (periodEnd === schoolEnd) {
+    if (periodEnd !== schoolEnd) {
         animateCountdown(card2, schoolEnd)
-        card2.classList.remove('skeleton');
-        card2.children[0].classList.remove('opacity-0');
     }
 }
 
+// Full Screen Button
 const fullscreen = document.getElementById('fullscreen');
 let intervalId = null;
 fullscreen.addEventListener('click', () => {
