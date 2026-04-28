@@ -35,6 +35,7 @@ function arrayToDate(array) {
 }
 
 export const schedules = [
+    // Monday - All Classes
     [
         { start: [7, 15], end: [8, 15], duration: 60 },
         { start: [8, 30], end: [9, 22], duration: 52 },
@@ -46,29 +47,33 @@ export const schedules = [
         { start: [13, 55], end: [14, 47], duration: 52 },
         { start: [14, 53], end: [15, 45], duration: 52 },
     ],
+    // Tuesday - Odd Day
     [
         { start: [7, 15], end: [8, 15], duration: 60 },
         { start: [8, 30], end: [10, 6], duration: 96 },
         { start: [10, 12], end: [11, 48], duration: 96 },
-        { start: [11, 48], end: [12, 23], duration: 35 },
-        { start: [12, 29], end: [14, 5], duration: 96 },
-        { start: [14, 11], end: [15, 47], duration: 96 },
+        { start: [11, 48], end: [12, 21], duration: 33 },
+        { start: [12, 27], end: [14, 3], duration: 96 },
+        { start: [14, 9], end: [15, 45], duration: 96 },
     ],
+    // Wednesday - Even Day
     [
         { start: [8, 0], end: [9, 0], duration: 60 },
         { start: [9, 0], end: [10, 36], duration: 96 },
         { start: [10, 42], end: [12, 23], duration: 101 },
-        { start: [12, 23], end: [13, 8], duration: 45 },
-        { start: [13, 14], end: [14, 50], duration: 96 },
+        { start: [12, 23], end: [13, 3], duration: 40 },
+        { start: [13, 9], end: [14, 45], duration: 96 },
     ],
+    // Thursday - Odd Day
     [
         { start: [7, 15], end: [8, 15], duration: 60 },
         { start: [8, 30], end: [10, 6], duration: 96 },
         { start: [10, 12], end: [11, 48], duration: 96 },
-        { start: [11, 48], end: [12, 23], duration: 35 },
-        { start: [12, 29], end: [14, 5], duration: 96 },
-        { start: [14, 11], end: [15, 47], duration: 96 },
+        { start: [11, 48], end: [12, 21], duration: 33 },
+        { start: [12, 27], end: [14, 3], duration: 96 },
+        { start: [14, 9], end: [15, 45], duration: 96 },
     ],
+    // Friday - Even Day
     [
         { start: [7, 15], end: [8, 15], duration: 60 },
         { start: [8, 30], end: [10, 6], duration: 96 },
